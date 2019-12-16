@@ -15,8 +15,6 @@ RUN apt-get update && \
     apt-get install -qy maven && \
 # Cleanup old packages
     apt-get -qy autoremove && \
-# Add user jenkins to the image
-    adduser --quiet jenkins && \
 
 # Standard SSH port
 EXPOSE 22
